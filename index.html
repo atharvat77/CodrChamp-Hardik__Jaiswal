@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>MOM'S KITCHEN</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <video autoplay muted loop src="video.mp4" id="slider"></video>
+      <ul class="navigation">
+        <li onclick="videoUrl('video.mp4')">
+          <img src="video.png" alt="image" />
+        </li>
+        <li onclick="videoUrl('video2.mp4')">
+          <img src="video2.png" alt="image2" />
+        </li>
+        <li onclick="videoUrl('video3.mp4')">
+          <img src="video3.png" alt="iamge3" />
+        </li>
+      </ul>
+
+      <nav>
+        <div class="logo">
+          <a href="http://127.0.0.1:5500/index.html"
+            ><i class="fa fa-cutlery"></i>MOM'S KITCHEN</a
+          >
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li>
+            <a href="#menu">MENU</a>
+          </li>
+          <li>
+            <a href="#expert">EXPERT</a>
+          </li>
+          <li>
+            <a href="#channels">CHANNELS</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+          <button type="button" class="log_in">LOG IN</button>
+          <button type="button">SIGN UP</button>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+      </nav>
+
+      <div class="banner">
+        <h1>
+          Food
+          <span class="highlight_text">
+            doesn't have <br /><span>a religion</span></span
+          >. It is a religion.
+        </h1>
+      </div>
+    </div>
+
+    <script>
+      function videoUrl(hmmmmm) {
+      document.getElementById("slider").src = hmmmmm;
+    }
+
+    const mainMenu = document.querySelector('.mainMenu');
+    const closeMenu = document.querySelector('.closeMenu');
+    const openMenu = document.querySelector('.openMenu');
+
+    openMenu.addEventListener('click',show);
+    closeMenu.addEventListener('click',close);
+
+    function show(){
+      mainMenu.style.display = 'flex';
+      mainMenu.style.top = '0';
+    }
+    function close(){
+      mainMenu.style.top = '-100%';
+    }
+    </script>
+
+<div id="about">
+  <div class="paragraph">
+    <h2>About <span>Us</span></h2>
+    <p>
+      For the first time in Janakpur, Mom's Kitchen has brought the Open Kitchen restaurant and Fresh Beans Coffee varieties concept where you can enjoy a variety of dishes each prepared by the expert chef to give you the best dining experience. We provide you with a wide variety of dishes to choose from, each created with the perfection which you can enjoy with your family and friends in a peaceful environment. <br><br>
+Upholding our motto of healthy eats wealthy treats, Mom's Kitchen only serves fresh, hygienic, and highest quality food to our valuable customers in a due time. With an open kitchen concept, we are established to fill up the need of a place where quality comes with consistency in terms of both foods and services, and a place where you can meet, relax and have a great time together.
+Serving more than hundred varieties of tea and coffee made from fresh beans, Mom's Kitchen is also a great place for the coffee enthusiast. 
+
+      <button type="button">Learn More</button>
+    </p>
+  </div>
+  <div class="img-container">
+    <img src="https://pngimg.com/uploads/chef/chef_PNG107.png" alt="Chef" />
+  </div>
+</div>
+<section id="menu" class="container-fluid">
+  <div class="heading text-center">
+    <h1>our <span>Menu</span></h1>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="starter.jpg" alt="image" />
+      <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Starters</h3>
+        Whenever you visit, Mom's Kitchen, you can start all way from our starters. These include some variety of sandwiches with some noodles and burgers.
+      </p>
+      <a href="#"><button>read more</button></a>
+    </div>
+
+    <div class="card">
+      <img src="seafood.jpg" alt="seafood" />
+      <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Main Cuisines</h3>
+        Now when you have explored the starters, you may trot off to the Main Cuisines which include a varity of continental cuisines such as Italian, Indian, Chinese, Japanese and many more!
+      </p>
+      <a href="#"><button>read more</button></a>
+    </div>
+
+    <div class="card">
+      <img src="desserts.jpg" alt="desserts" />
+      <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Desserts</h3>
+        Now at the last, a sweet mode would be a blast off!! This section includes pastries of almost all flavours, ice-creams, and some exotic sweets.
+      </p>
+      <a href="#"><button>read more</button></a>
+    </div>
+  </div>
+</section>
+
+<section id="expert">
+  <div class="text">
+    <h1>our <span>experts</span></h1>
+    <p class="headline">See who our experts are!</p>
+  </div>
+  <div class="card-container2">
+    <div class="cards">
+      <img src="chef1.jpeg" alt="image" />
+      <p>
+        <h3>John Doe</h3>
+        Working since 2015 at Janakpur. One of our chief chef under whom our restaurant is coordinated.
+      </p>
+      <a href=""><button>read more</button></a>
+    </div>
+
+    <div class="cards">
+      <img src="chef2.jpg" alt="image2" />
+      <p>
+        <h3>Mrs. Zenith</h3>
+        An excellent chef, won a lot of titles in cooking and has a great sense of serving food!
+      </p>
+      <a href=""><button>read more</button></a>
+    </div>
+
+    <div class="cards">
+      <img src="chef3.jpg" alt="iamge3" />
+      <p>
+        <h3>Steve Joe</h3>
+        Working since 2010 in Kolkata. Won a lot of titles and is a silver medalist at world-level cooking championship.
+      </p>
+      <a href=""><button>read more</button></a>
+    </div>
+  </div>
+
+  <section id="channels">
+    <div class="chain">
+      <h2>Our <span>Videos</span></h2>
+      <p>Scroll through some of our videos!</p>
+      <div class="videos">
+        <iframe class="vid1" width="420" height="315" src="https://www.youtube.com/embed/4ZmzThsytKU?mute=1">
+        </iframe>
+
+        <iframe class="vid2" width="420" height="315" src="https://www.youtube.com/embed/aE_dCeV7MnE?mute=1">
+        </iframe>
+
+        <iframe class="vid3" width="420" height="315" src="https://www.youtube.com/embed/x5quhVqGeKw?mute=1">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container-fluid">
+
+    <div class="heading text-center">
+      <h1><span>contact</span> us</h1>
+    </div>
+
+    <div class="row justify-content-center">
+
+      <form action="" class="col-md-7">
+
+        <div class="inputBox">
+          <input type="text" required>
+          <h3>full name</h3>
+        </div>
+
+        <div class="inputBox">
+          <input type="email" required>
+          <h3>e-mail</h3>
+        </div>
+
+        <div class="inputBox">
+          <textarea required name="" id="" cols="30" rows="10"></textarea>
+          <h3>message</h3>
+        </div>
+
+        <input type="submit" value="send">
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <div class="footer">
+    <div class="icons">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+    </div>
+    <p>© Copyright 2021 by MOM"S KITCHEN</p>
+    <textarea name="" id="" cols="30" rows="5" placeholder="Subscribe to our newsletter"></textarea>
+    <button type="button"><strong style="font-weight: bolder;">Subscribe</strong></button>
+  </div>
+
+  </body>
+</html>
